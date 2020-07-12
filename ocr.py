@@ -49,7 +49,7 @@ def OCR(filename):
 def preprocess(filename):
     outfile = os.path.splitext(filename)[0]+'.tiff'
     ppImage = pgImage()
-    ppImage.density('600')
+    ppImage.density('300')
 
     ppImage.read(filename)
     ppImage.backgroundColor('white')
